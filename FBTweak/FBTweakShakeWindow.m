@@ -43,10 +43,10 @@ static CFTimeInterval _FBTweakShakeWindowMinTimeInterval = 0.4;
 
 - (BOOL)_shouldPresentTweaks
 {
-#if TARGET_IPHONE_SIMULATOR && FB_TWEAK_ENABLED
-  return YES;
+#if TARGET_IPHONE_SIMULATOR
+    return YES;
 #elif FB_TWEAK_ENABLED
-  return _shaking && [[UIApplication sharedApplication] applicationState] == UIApplicationStateActive;
+    return _shaking && [[UIApplication sharedApplication] applicationState] == UIApplicationStateActive;
 #else
   return NO;
 #endif
