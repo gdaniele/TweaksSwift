@@ -12,7 +12,7 @@
 #if DEBUG
 #define FB_TWEAK_ENABLED 1
 #else
-#define FB_TWEAK_ENABLED 0
+#define FB_TWEAK_ENABLED 1
 #endif
 
 #endif
